@@ -1,0 +1,167 @@
+@import '../../global.scss';
+
+.stayInTouch {
+    width: 100%;
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+
+        .wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .wrapContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-family: "Playfair Display", sans-serif;
+                    font-size: 3.5vw;
+                    font-weight: 700;
+                    color: $mainColor;
+                    line-height: 4vw;
+                }
+
+                p {
+                    font-family: "Manrope", sans-serif;
+                    font-weight: 400;
+                    font-size: 1vw;
+                    line-height: 1.5vw;
+                    color: black;
+                    margin: 2.25vw 0;
+                }
+
+                form {
+                    margin-top: 0.25vw;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 45vw;
+                    gap: 2.5vw;
+
+                    input {
+                        padding: 1vw;
+                        border: 0.01vw solid silver;
+                        outline: none;
+                        font-size: 0.8vw;
+                        font-family: "Manrope", sans-serif;
+                        font-weight: 400;
+                        width: 100%;
+                    }
+
+                    div {
+                        width: 100%;
+
+                        label {
+                            display: none;
+                            font-size: 0.8vw;
+                            font-family: "Manrope", sans-serif;
+                            font-weight: 400;
+                        }
+
+                        textarea {
+                            outline: none;
+                            padding: 1vw;
+                            font-size: 0.8vw;
+                            font-family: "Manrope", sans-serif;
+                            border: 0.01vw solid silver;
+                            font-weight: 400;
+                            width: 100%;
+                        }
+                    }
+
+                    button {
+                        width: 7vw;
+                        height: 2.4vw;
+                        background-color: $mainColor;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 1vw;
+                        font-family: "Manrope", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .stayInTouch {
+        .container {
+            .wrapper {
+                .wrapContent {
+                    h2 {
+                        font-size: 6.5vw;
+                        line-height: 8.3vw;
+                    }
+
+                    p {
+                        font-size: 4.3vw;
+                        font-weight: 300;
+                        font-family: "Lato", sans-serif;
+                        line-height: 6.5vw;
+                        text-align: center;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    form {
+                        width: 90%;
+
+                        input {
+                            padding: 2.7vw 0;
+                            font-size: 4.3vw;
+                            font-weight: 300;
+                            font-family: "Lato", sans-serif;
+                            line-height: 5.4vw;
+                            color: rgba(0, 0, 0, 0.5);
+                            border: 0;
+                            border-bottom: 2px solid silver;
+                        }
+
+                        div{
+                            
+                            label {
+                                display: block;
+                                margin: 2.7vw 0;
+                                width: 100%;
+                                font-size: 4.3vw;
+                                font-weight: 300;
+                                font-family: "Lato", sans-serif;
+                                line-height: 5.4vw;
+                                color: rgba(0, 0, 0, 0.5);
+                            }
+    
+                            textarea {
+                                &::placeholder {
+                                    color: transparent;
+                                }
+    
+                                padding: 2.7vw;
+                                font-size: 4.3vw;
+                                font-weight: 300;
+                                height: 22.4vw;
+                                font-family: "Lato",
+                                sans-serif;
+                                line-height: 5.4vw;
+                                color: rgba(0, 0, 0, 0.5);
+                                border: 2px solid silver;
+                            }
+                        }
+
+                        button {
+                            width: 22.4vw;
+                            height: 11.2vw;
+                            border-radius: 1.3vw;
+                            font-size: 4.3vw;
+                            font-family: "Lato", sans-serif;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

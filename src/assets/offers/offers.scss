@@ -1,0 +1,148 @@
+@import '../../global.scss';
+
+.offers{
+    width: 100%;
+    .container{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        .wrapper{
+            margin: 12.5vw 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .resImg{
+                display: none;
+            }
+            .containerIcons{
+                display: none;
+            }
+
+            h2{
+                font-size: 3vw;
+                font-weight: 700;
+                line-height: 4vw;
+                font-family: 'Playfair Display', sans-serif;
+                color: $mainColor;
+                margin-bottom: 6.05vw;
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+
+            .contentWrap{
+                display: flex;
+                align-items: center;
+                height: 29vw;
+                width: 100%;
+                padding: 0 3.5vw;
+
+                .left{
+                    width: 38.1vw;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    .imgWrap{
+                        width: 28.5vw;
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    .imgRight{
+                        width: 10vw;
+                        height: 18vw;
+                        background-color: $mainColor;
+                    }
+                }
+                .right{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    .wrapIcons{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 2vw;
+                        img{
+                            width: 4vw;
+                        }
+                        p{
+                            font-size: 0.8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 376px){
+    .offers{
+        width: 100vw;
+        overflow: hidden;
+        .container{
+            
+            height: 100%;
+            .wrapper{
+                height: 100%;
+                position: relative;
+                margin: 14.8vw 0 60.6vw;
+                h2{
+                    &:nth-child(2){
+                        display: block;
+                    }
+                    &:first-child{
+                        display: none;
+                    }
+                    font-size: 6.5vw;
+                    line-height: 8.8vw;
+                    margin-bottom: 5.4vw;
+                }
+                .contentWrap{
+                    display: none;
+                }
+
+                .resImg{
+                    display: block;
+                    width: 101vw;
+                }
+                .containerIcons{
+                    bottom: -50.5vw;
+                    position: absolute;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    background-color: $mainColor;
+                    width: 80.8vw;
+                    height: 66.7vw;
+                    padding: 2.7vw;
+                    .wrapIcons{
+                        width: 25vw;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
+                        color: white;
+                        text-align: center;
+                        p{
+                            font-size: 3.2vw;
+                            line-height: 4.8vw;
+                            font-weight: 400;
+                        }
+                        
+                        img{
+                            width: 8.6vw;
+                            height: 8.6vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

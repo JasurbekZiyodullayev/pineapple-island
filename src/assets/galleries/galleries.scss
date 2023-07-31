@@ -1,0 +1,105 @@
+@import '../../global.scss';
+
+.galleries{
+    widows: 100%;
+    .container{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+
+        .wrapper{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                font-size: 3.5vw;
+                line-height: 4vw;
+                font-weight: 700;
+                color: $mainColor;
+                font-family: "Playfair Display", sans-serif;
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+            p{
+                margin: 2.25vw 0;
+                font-size: 1vw;
+                line-height: 1.6vw;
+                color: $textColor;
+                font-family: "Manrope", sans-serif;
+                width: 36.5vw;
+                text-align: center;
+            }
+            .galleryWrap{
+               display: flex;
+               justify-content: center;
+               flex-wrap: wrap;
+               gap: 1.5vw;
+               img{
+                width: 27.5vw;
+                &.hight{
+                    display: none;
+                }
+               }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 376px){
+    .galleries{
+        .container{
+            .wrapper{
+                h2{
+                    &:first-child{
+                        display: none;
+                    }
+                    &:nth-child(2){
+                        display: block;
+                    }
+                    font-size: 6.5vw;
+                    line-height: 8.8vw;
+                }
+                p{
+                    font-size: 4vw;
+                    font-weight: 300;
+                    font-family: "Lato", sans-serif;
+                    line-height: 6.5vw;
+                    text-align: center;
+                    margin: 6.5vw 0;
+                    width: 86.4vw;
+                }
+                .galleryWrap{
+                    width: 100%;
+                    display: grid;
+                    gap: 2.7vw;
+                    width: auto;
+                    grid-template-columns: auto;
+                    grid-template-rows: repeat(8, 150px);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        &.hight{
+                            display: block;
+                        }
+                        &:nth-child(6){
+                            grid-row: span 2;
+                        }
+                        &:nth-child(8){
+                            grid-row: span 2;
+                        }
+                        &:last-child{
+                            grid-column: span 2;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}

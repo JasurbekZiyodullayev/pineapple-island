@@ -1,0 +1,228 @@
+@import '../../global.scss';
+
+.feature {
+    width: 100%;
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+
+        .wrapper {
+            margin: 12.5vw 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contentWrap {
+                display: flex;
+                width: 90%;
+                justify-content: space-around;
+
+                .left {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .imgWrap{
+                        img{
+                            width: 24.2vw;
+                        }
+                    }
+
+                    .imgRight {
+                        width: 10vw;
+                        height: 22.5vw;
+                        background-color: $mainColor;
+                    }
+                }
+
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    h2 {
+                        font-size: 3.5vw;
+                        font-family: "Playfair Display", sans-serif;
+                        font-weight: 700;
+                        color: $mainColor;
+                        line-height: 4vw;
+                        margin-bottom: 2.25vw;
+                    }
+
+                    .table {
+                        padding: 0.5vw 1vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 110%;
+                        background-color: #CFD9D6;
+
+                        p {
+                            font-family: "Manrope", sans-serif;
+                            font-size: 1vw;
+                            font-weight: 400;
+                            color: $textColor-2;
+                            line-height: 1vw;
+                        }
+
+                        img {
+                            width: 1vw;
+                            height: 1vw;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .table2 {
+                        padding: 1vw 1vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 110%;
+
+                        p {
+                            font-family: "Manrope", sans-serif;
+                            font-size: 1vw;
+                            font-weight: 400;
+                            color: $textColor-2;
+                            line-height: 1vw;
+                        }
+
+                        img {
+                            width: 1vw;
+                            height: 1vw;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .contentWrap2 {
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                width: 90%;
+                margin-top: 12.5vw;
+
+                .left {
+                    flex: 5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .imgWrap{
+                        img{
+                            width: 24.2vw;
+                        }
+                    }
+
+                    .imgRight {
+                        width: 10vw;
+                        height: 22.5vw;
+                        background-color: $mainColor;
+                    }
+                }
+
+                .right {
+                    flex: 4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    div {
+                        width: 50%;
+
+                        h2 {
+                            font-size: 3.5vw;
+                            font-family: "Playfair Display", sans-serif;
+                            font-weight: 700;
+                            color: $mainColor;
+                            line-height: 4vw;
+                            margin-bottom: 2.25vw;
+                        }
+
+                        p {
+                            font-family: "Manrope", sans-serif;
+                            font-size: 1vw;
+                            font-weight: 400;
+                            color: $textColor;
+                            line-height: 1.5vw;
+                        }
+                        button{
+                            width: 12vw;
+                            height: 3vw;
+                            background-color: $mainColor;
+                            font-size: 1vw;
+                            font-family: "Manrope", sans-serif;
+                            color: white;
+                            cursor: pointer;
+                            margin-top: 2.5vw;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (max-width: 376px){
+    .feature{
+        .container{
+            width: 100%;
+            .wrapper{
+                .contentWrap{
+                    display: none;
+                }
+                .contentWrap2{
+                    justify-content: center;
+                    width: 100%;
+                    height: 70.8vw;
+                    .left{
+                        display: none;
+                    }
+                    .right{
+                        background-color: $mainColor;
+                        width: 100%;
+                        height: 100%;
+                        div{
+                            width: 90%;
+                            height: 100%;
+                            padding: 5.4vw 0;
+                            margin: 0 auto;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            flex-direction: column;
+                            text-align: center;
+                            h2{
+                                color: white;
+                                font-size: 6.5vw;
+                                line-height: 8.8vw;
+                            }
+                            p{
+                                color: white;
+                                font-size:4.3vw;
+                                line-height: 5.53vw;
+                            }
+                            button{
+                                color: $mainColor;
+                                background-color: white;
+                                width: 27vw;
+                                height: 10.8vw;
+                                border-radius: 5px;
+                                font-size:4.3vw;
+                                line-height: 5.4vw;
+                                font-weight: 500;
+                                font-family: "Lato", sans-serif;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

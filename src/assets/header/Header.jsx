@@ -1,11 +1,16 @@
+import { useState } from 'react';
 import './header.scss';
+import {Container } from './style';
+
 
 export default function Header() {
+  const [backImg, setBackIMg] = useState(0)
   return (
-    <div className='header'>
+    <Container className='header' >
       <div className="container">
         <div className="wrapper">
           <div className="textWrap">
+          
             <h2>Pineapple Island: <br />
               GenZ and Millenial
               Abode</h2>
@@ -15,6 +20,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

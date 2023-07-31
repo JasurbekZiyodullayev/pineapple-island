@@ -1,5 +1,9 @@
 import './feature.scss'
 
+import ImgFeature from "../../images/feature-img.png"
+import ImgFeature2 from "../../images/icons/check.png"
+import ImgFeature3 from "../../images/feature-img-2.png"
+
 export default function Feature() {
     return (
         <div className='feature'>
@@ -8,7 +12,7 @@ export default function Feature() {
                     <div className="contentWrap">
                         <div className="left">
                             <div className="imgWrap">
-                                <img src="src/images/feature-img.png" alt="" />
+                                <img src={ImgFeature} alt="feature" />
                             </div>
                             <div className="imgRight"></div>
                         </div>
@@ -16,43 +20,43 @@ export default function Feature() {
                             <h2>Amazing Features</h2>
                             <div className="table">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f" />
                             </div>
                             <div className="table2">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f" />
                             </div>
                             <div className="table">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                             <div className="table2">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                             <div className="table">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                             <div className="table2">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                             <div className="table">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                             <div className="table2">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                             <div className="table">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f" />
                             </div>
                             <div className="table2">
                                 <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <img src="src/images/icons/check.png" alt="" />
+                                <img src={ImgFeature2} alt="f"  />
                             </div>
                         </div>
                     </div>
@@ -70,7 +74,7 @@ export default function Feature() {
                         <div className="left">
                             <div className="imgRight"></div>
                             <div className="imgWrap">
-                                <img src="src/images/feature-img-2.png" alt="" />
+                                <img src={ImgFeature3} alt="" />
                             </div>
                         </div>
 

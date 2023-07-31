@@ -1,8 +1,10 @@
 import './footer.scss';
+import ImgFooter from '../../images/icons/footerIcon.png'
+import ImgFooterBack from '../../images/footerBack.png'
 
 export default function Footer() {
     return (
-        <div className='footer'>
+        <div className='footer' style={{backgroundImage: 'url(' + ImgFooterBack + ')'}}>
             <div className="container">
                 <div className="wrapper">
                     <div className="contentWrap">
@@ -15,7 +17,7 @@ export default function Footer() {
                             <div className="hightContent">
                                 <h2>Pineapple Island</h2>
                                 <p>
-                                    <span><img src="src/images/icons/footerIcon.png" alt="" /></span>
+                                    <span><img src={ImgFooter} alt="" /></span>
                                     Copyright 2021 Glowdsgn All Rights Reserved
                                 </p>
                             </div>

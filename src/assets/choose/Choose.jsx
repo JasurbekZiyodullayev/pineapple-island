@@ -1,8 +1,11 @@
 import './choose.scss'
+import ImgChoose from '../../images/main-img-1.png'
+import ImgChooseRe from '../../images/responsev-img/chooseRes.png'
+import ImgChooseBack from '../../images/chooseBack.png'
 
 export default function Choose() {
     return (
-        <div className='choose'>
+        <div className='choose' style={{backgroundImage: 'url(' + ImgChooseBack + ')'}}>
             <div className="container">
                 <div className="wrapper">
                     <div className="left">
@@ -19,8 +22,8 @@ export default function Choose() {
                             </p>
                         </div>
                         <div className="imgWrap">
-                            <img className='img' src="src/images/main-img-1.png" alt="about" />
-                            <img className='imgHight' src="src/images/responsev-img/chooseRes.png" alt="about" />
+                            <img className='img' src={ImgChoose} alt="about" />
+                            <img className='imgHight' src={ImgChooseRe} alt="about" />
                         </div>
                     </div>
                 </div>

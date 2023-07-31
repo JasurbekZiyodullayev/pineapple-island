@@ -1,11 +1,5 @@
 @import '../../global.scss';
 .header{
-    width: 100%;
-    height: 35vw;
-    background-image: url('src/images/header-img.png');
-    background-repeat: no-repeat;
-    background-size: 75% 100%;
-    background-position: top right;
     .container{
         width: 90%;
         height: 100%;
@@ -69,10 +63,6 @@
 
  @media (max-width: 376px){
     .header{
-        height: 173.7vw;
-        background-size: 90%;
-        background-position: center;
-        background-image: url('src/images/responsev-img/header-leaut.png'), url('src/images/responsev-img/header-respons.png') ;
         .container{
             .wrapper{
                 .textWrap{
